@@ -1,0 +1,22 @@
+{{!< default}}
+
+
+{{#foreach posts}}
+<div class="inner cover post post-head">
+<h1 class="cover-heading post-title"><a href="{{url}}">{{{title}}}</a></h1>
+    <p><time datetime="{{date format="YYYY-MM-DD"}}">Published on {{date format='DD MMM YYYY'}}</time> by {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}</p>
+</div>
+
+<div class="inner cover post post-body">
+
+    {{excerpt}} <a href="{{url}}">&raquo;</a>
+</div>
+{{/foreach}}
+
+
+{{!! After all the posts, we have the previous/next pagination links }}
+{{pagination}}
+
+<div class="inner cover container post post-foot">
+</div>
+
