@@ -6,25 +6,13 @@
 (function ($) {
 
     $(document).ready(function(){
-
-        // On the home page, move the blog icon inside the header 
-        // for better relative/absolute positioning.
-
-        //$("#blog-logo").prependTo("#site-head-content");
-
-        
-    var $document = $(document);
-
-    $document.ready(function () {
-
-        var $postContent = $(".post-content");
+        // var $postContent = $(".post-content");
         
         $(".scroll-down").arctic_scroll();
 
         $(".menu-button, .home-template, .nav-close").on("click", function(e){
             e.preventDefault();
             $("body").toggleClass("nav-opened nav-closed");
-//            window.alert("Hi!");
         });
 
     });
